@@ -1,0 +1,5 @@
+.astro
+.DS_STORE
+.superpowers
+dist
+node_modules

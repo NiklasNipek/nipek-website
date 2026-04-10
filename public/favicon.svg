@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 56" fill="none">
+  <!--
+    NIPEK logomärke — stigande trappsteg med framåtlut
+    Tre parallelogram-block i stigande höjd och stigande position.
+    Block 1: höjd 20, Block 2: höjd 30, Block 3: höjd 40
+    Lutning: 7px (top förskjuten 7px åt höger relativt botten)
+  -->
+  <!-- Block 1 (kort, nere till vänster) -->
+  <path d="M 7 36 L 19 36 L 12 56 L 0 56 Z" fill="#000000"/>
+  <!-- Block 2 (mellan) -->
+  <path d="M 27 18 L 39 18 L 32 48 L 20 48 Z" fill="#000000"/>
+  <!-- Block 3 (lång, uppe till höger) -->
+  <path d="M 47 0 L 59 0 L 52 40 L 40 40 Z" fill="#000000"/>
+</svg>

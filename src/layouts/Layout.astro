@@ -1,0 +1,55 @@
+---
+import '../styles/global.css'
+
+const {
+  title = 'Niklas Petersson – Affärsutveckling & Digitalisering',
+  description = 'Niklas Petersson hjälper verksamheter att växa och bli mer effektiva – genom affärsutveckling, digitalisering och rätt uppsättning av affärssystem. Konsult med 30 års erfarenhet och djup bakgrund inom Fortnox och svenska affärssystem.',
+} = Astro.props
+
+const canonicalURL = 'https://nipek.se'
+
+const schemaOrg = {
+  '@context': 'https://schema.org',
+  '@type': ['Person', 'ProfessionalService'],
+  name: 'Niklas Petersson',
+  url: canonicalURL,
+  telephone: '0730231010',
+  email: 'niklas@nipek.se',
+  description,
+  knowsAbout: [
+    'Affärsutveckling',
+    'Digitalisering',
+    'Affärssystemimplementation',
+    'Verksamhetsutveckling',
+    'Ekonomi och administration',
+    'Fortnox',
+    'Visma',
+    'Spiris',
+    'ERP-system',
+    'CRM-system',
+    'Affärssystem',
+    'Systemintegrationer',
+  ],
+}
+---
+
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalURL} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:locale" content="sv_SE" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <script type="application/ld+json" set:html={JSON.stringify(schemaOrg)} />
+  </head>
+  <body class="bg-white text-charcoal font-sans antialiased">
+    <slot />
+  </body>
+</html>
